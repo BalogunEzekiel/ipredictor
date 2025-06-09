@@ -2,12 +2,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the trained model
-model = joblib.load("ipredictor_model.pkl")  # You must train and save the model locally
-
-
 # Set page config
 st.set_page_config(page_title="Lagos State House Rent Predictions", layout="centered")
+
+# Load the trained model
+model = joblib.load("ipredictor_model.pkl")  # You must train and save the model locally
 
 # App title
 st.title("🏠 Lagos State House Rent Predictions")
